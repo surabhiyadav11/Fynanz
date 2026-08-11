@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fynanz - Dashboard</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="dashboard.html" class="nav-logo">
+                    <img src="images/logo.svg" alt="Fynanz Logo" class="logo-img" />
+                    <span class="logo-text">Fynanz</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="#" id="logoutBtn" class="nav-link">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-content">
+                    <h1 id="welcomeMessage">Welcome back!</h1>
+                    <p id="welcomeSubtext">Track your expenses and achieve your financial goals</p>
+                </div>
+                <div class="streak-badges-container">
+                    <div class="streak-card">
+                        <div class="streak-icon">🔥</div>
+                        <div class="streak-info">
+                            <span class="streak-count" id="streakCount">0</span>
+                            <span class="streak-label">Day Streak</span>
+                        </div>
+                    </div>
+                    <div class="badges-preview" id="badgesPreview">
+                        <div class="badges-icon">🏆</div>
+                        <div class="badges-info">
+                            <span class="badges-count" id="badgesCount">0</span>
+                            <span class="badges-label">Badges</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Badges Section -->
+            <section class="badges-section" id="badgesSection" style="display: none">
+                <h2>🏆 Your Badges</h2>
+                <div class="badges-grid" id="badgesGrid">
+                    <p class="no-badges">No badges earned yet. Keep tracking your expenses!</p>
+                </div>
+            </section>
+
+            <!-- Add Transaction Section -->
+            <section class="add-expense-section">
+                <h2>Add New Expense</h2>
+                <form id="addExpenseForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" step="0.01" required placeholder="0.00" />
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" id="description" required placeholder="e.g., Lunch at cafe" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category (Optional)</label>
+                            <select id="category">
+                                <option value="">Auto-detect</option>
+                                <option value="Food & Dining">Food & Dining</option>
+                                <option value="Transport">Transport</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Shopping">Shopping</option>
+                                <option value="Utilities">Utilities</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Education">Education</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="expenseDate">Date</label>
+                            <input type="date" id="expenseDate" required />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Expense</button>
+                </form>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="summary-section">
+                <div class="tab-container">
+                    <button class="tab-btn active" data-period="week">Week</button>
+                    <button class="tab-btn" data-period="month">Month</button>
+                    <button class="tab-btn" data-period="all">All Time</button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-label">Total Spent</p>
+                        <p class="stat-value" id="totalSpent">₹0.00</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Transactions</p>
+                        <p class="stat-value" id="transactionCount">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Daily Average</p>
+                        <p class="stat-value" id="dailyAverage">₹0.00</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <div class="chart-container">
+                    <h3>Spending by Category</h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Daily Spending Trend</h3>
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Future Predictions Section -->
+            <section class="predictions-section">
+                <div class="predictions-header">
+                    <h2>📊 Future Spending Forecast</h2>
+                    <button id="getPredictionsBtn" class="btn btn-primary">Refresh Predictions</button>
+                </div>
+                <div id="predictionsContent" class="predictions-content">
+                    <p class="predictions-info">
+                        Click "Refresh Predictions" to see your estimated future expenses based on your spending
+                        patterns.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Transactions Table -->
+            <section class="transactions-section">
+                <div class="transactions-header">
+                    <h2>Transactions</h2>
+                    <div class="filter-group">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="search-input"
+                            placeholder="Search by description or date..." />
+                        <label for="categoryFilter">Category:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="Food">Food & Dining</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Utilities">Utilities</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Education">Education</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="transactionsTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-column="date">Date</th>
+                                <th class="sortable" data-column="description">Description</th>
+                                <th class="sortable" data-column="category">Category</th>
+                                <th class="sortable" data-column="amount">Amount</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionsList">
+                            <tr>
+                                <td colspan="5" class="loading">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Edit Transaction Modal -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+                <h2>Edit Transaction</h2>
+                <form id="editTransactionForm">
+                    <input type="hidden" id="editTransactionId" />
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editAmount">Amount</label>
+                            <input type="number" id="editAmount" step="0.01" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="editDescription">Description</label>
+                            <input type="text" id="editDescription" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editCategory">Category</label>
+                            <select id="editCategory" required>
+                                <option value="Food & Dining">Food & Dining</option>
+                                <option value="Transport">Transport</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Shopping">Shopping</option>
+                                <option value="Utilities">Utilities</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Education">Education</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editDate">Date</label>
+                            <input type="date" id="editDate" required />
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelEdit">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="alertBox" class="alert-box"></div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">Fynanz</div>
+                    <p class="footer-text">© 2026 Fynanz. Smart expense tracking made simple.</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/common.js"></script>
+        <script src="js/dashboard.js"></script>
+    </body>
+</html>

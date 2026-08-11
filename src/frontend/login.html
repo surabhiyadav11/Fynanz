@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fynanz - Login</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.svg" alt="Fynanz Logo" class="logo-img" />
+                    <span class="logo-text">Fynanz</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="login.html" class="nav-link active">Login</a></li>
+                    <li><a href="register.html" class="nav-link btn btn-primary">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="auth-container">
+            <div class="auth-card">
+                <h1>Fynanz</h1>
+                <p class="subtitle">Smart Expense Tracker</p>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginIdentity">Email or Username</label>
+                        <input
+                            type="text"
+                            id="loginIdentity"
+                            name="identity"
+                            required
+                            placeholder="Enter email or username" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            required
+                            placeholder="Enter password" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                <p class="auth-switch">Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+
+        <div id="alertBox" class="alert-box"></div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">Fynanz</div>
+                    <p class="footer-text">© 2026 Fynanz. Smart expense tracking made simple.</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/common.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

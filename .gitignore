@@ -1,0 +1,9 @@
+src/backend/venv
+src/backend/.venv
+src/backend/.env
+src/backend/__pycache__/
+.idea
+.vscode
+*.md
+*.sh
+src/backend/*.pkl

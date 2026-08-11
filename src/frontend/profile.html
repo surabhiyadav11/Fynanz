@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fynanz - Profile</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="dashboard.html" class="nav-logo">
+                    <img src="images/logo.svg" alt="Fynanz Logo" class="logo-img" />
+                    <span class="logo-text">Fynanz</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="profile.html" class="nav-link active">Profile</a></li>
+                    <li><a href="#" id="logoutBtn" class="nav-link">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="profile-section">
+                <h2>My Profile</h2>
+                <div class="profile-card">
+                    <div class="profile-item">
+                        <label>Username</label>
+                        <p id="profileUsername">-</p>
+                    </div>
+                    <div class="profile-item">
+                        <label>First Name</label>
+                        <p id="profileFirstName">-</p>
+                    </div>
+                    <div class="profile-item">
+                        <label>Last Name</label>
+                        <p id="profileLastName">-</p>
+                    </div>
+                    <div class="profile-item">
+                        <label>Email</label>
+                        <p id="profileEmail">-</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="alertBox" class="alert-box"></div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">Fynanz</div>
+                    <p class="footer-text">© 2026 Fynanz. Smart expense tracking made simple.</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/common.js"></script>
+        <script src="js/profile.js"></script>
+    </body>
+</html>

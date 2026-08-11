@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fynanz - Register</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.svg" alt="Fynanz Logo" class="logo-img" />
+                    <span class="logo-text">Fynanz</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link btn btn-primary active">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="auth-container">
+            <div class="auth-card">
+                <h1>Fynanz</h1>
+                <p class="subtitle">Create Your Account</p>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required placeholder="Choose a username" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first_name" required placeholder="Your first name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last_name" required placeholder="Your last name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            required
+                            placeholder="Create a strong password" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+
+                <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+
+        <div id="alertBox" class="alert-box"></div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">Fynanz</div>
+                    <p class="footer-text">© 2026 Fynanz. Smart expense tracking made simple.</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/common.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

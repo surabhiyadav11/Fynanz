@@ -1,0 +1,760 @@
+{
+    "training_data": [
+        {
+            "description": "McDonald's burger meal",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Restaurant dinner",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Coffee shop latte",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Pizza delivery",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Grocery shopping food",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Breakfast at cafe",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Lunch at work cafeteria",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Starbucks coffee and pastry",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Takeaway Chinese food",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Supermarket groceries",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Fast food combo meal",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Dinner at Italian restaurant",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Bakery bread and cakes",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Burger King meal",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "KFC chicken bucket",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Subway sandwich lunch",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Sushi restaurant dinner",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Ice cream parlor dessert",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Domino's pizza order",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Taco Bell tacos",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Dunkin Donuts coffee",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Whole Foods market shopping",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Farmers market fresh produce",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Snacks from convenience store",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Brunch at bistro",
+            "category": "Food & Dining"
+        },
+        {
+            "description": "Uber ride to office",
+            "category": "Transport"
+        },
+        {
+            "description": "Taxi fare home",
+            "category": "Transport"
+        },
+        {
+            "description": "Bus pass monthly",
+            "category": "Transport"
+        },
+        {
+            "description": "Petrol gas fill up",
+            "category": "Transport"
+        },
+        {
+            "description": "Car maintenance",
+            "category": "Transport"
+        },
+        {
+            "description": "Train ticket to city",
+            "category": "Transport"
+        },
+        {
+            "description": "Metro card recharge",
+            "category": "Transport"
+        },
+        {
+            "description": "Lyft ride to airport",
+            "category": "Transport"
+        },
+        {
+            "description": "Vehicle insurance premium",
+            "category": "Transport"
+        },
+        {
+            "description": "Car wash service",
+            "category": "Transport"
+        },
+        {
+            "description": "Parking fee downtown",
+            "category": "Transport"
+        },
+        {
+            "description": "Bike repair and maintenance",
+            "category": "Transport"
+        },
+        {
+            "description": "Car oil change",
+            "category": "Transport"
+        },
+        {
+            "description": "New tires for car",
+            "category": "Transport"
+        },
+        {
+            "description": "Auto repair service",
+            "category": "Transport"
+        },
+        {
+            "description": "Gasoline fuel station",
+            "category": "Transport"
+        },
+        {
+            "description": "Public transport pass",
+            "category": "Transport"
+        },
+        {
+            "description": "Highway toll charges",
+            "category": "Transport"
+        },
+        {
+            "description": "Car rental for weekend",
+            "category": "Transport"
+        },
+        {
+            "description": "Motorcycle fuel",
+            "category": "Transport"
+        },
+        {
+            "description": "Auto body shop repairs",
+            "category": "Transport"
+        },
+        {
+            "description": "Vehicle registration fee",
+            "category": "Transport"
+        },
+        {
+            "description": "Scooter ride sharing",
+            "category": "Transport"
+        },
+        {
+            "description": "Subway monthly pass",
+            "category": "Transport"
+        },
+        {
+            "description": "Bicycle accessories",
+            "category": "Transport"
+        },
+        {
+            "description": "Netflix subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Movie theatre tickets",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Gaming console game",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Concert tickets",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Spotify premium",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Amazon Prime subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Disney Plus monthly fee",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Cinema movie night",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Video game purchase",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Streaming service subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Theatre play tickets",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Museum entry fee",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Zoo visit tickets",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Amusement park entry",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Sports event tickets",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Bowling alley game",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Arcade gaming tokens",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Book from bookstore",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Magazine subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Apple Music subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Hulu streaming service",
+            "category": "Entertainment"
+        },
+        {
+            "description": "YouTube Premium membership",
+            "category": "Entertainment"
+        },
+        {
+            "description": "PlayStation Plus subscription",
+            "category": "Entertainment"
+        },
+        {
+            "description": "Xbox Game Pass",
+            "category": "Entertainment"
+        },
+        {
+            "description": "New shoes from Nike",
+            "category": "Shopping"
+        },
+        {
+            "description": "Clothes from H&M",
+            "category": "Shopping"
+        },
+        {
+            "description": "Laptop accessories",
+            "category": "Shopping"
+        },
+        {
+            "description": "Phone case cover",
+            "category": "Shopping"
+        },
+        {
+            "description": "Home decoration items",
+            "category": "Shopping"
+        },
+        {
+            "description": "Amazon online shopping",
+            "category": "Shopping"
+        },
+        {
+            "description": "Furniture from IKEA",
+            "category": "Shopping"
+        },
+        {
+            "description": "Electronics store purchase",
+            "category": "Shopping"
+        },
+        {
+            "description": "Clothing store shopping",
+            "category": "Shopping"
+        },
+        {
+            "description": "New smartphone purchase",
+            "category": "Shopping"
+        },
+        {
+            "description": "Jewelry store purchase",
+            "category": "Shopping"
+        },
+        {
+            "description": "Cosmetics and makeup",
+            "category": "Shopping"
+        },
+        {
+            "description": "Sporting goods equipment",
+            "category": "Shopping"
+        },
+        {
+            "description": "Hardware store tools",
+            "category": "Shopping"
+        },
+        {
+            "description": "Pet supplies shopping",
+            "category": "Shopping"
+        },
+        {
+            "description": "Garden plants and tools",
+            "category": "Shopping"
+        },
+        {
+            "description": "Toys for kids",
+            "category": "Shopping"
+        },
+        {
+            "description": "New watch purchase",
+            "category": "Shopping"
+        },
+        {
+            "description": "Sunglasses from store",
+            "category": "Shopping"
+        },
+        {
+            "description": "Handbag purchase",
+            "category": "Shopping"
+        },
+        {
+            "description": "Wallet leather goods",
+            "category": "Shopping"
+        },
+        {
+            "description": "Bedding and linens",
+            "category": "Shopping"
+        },
+        {
+            "description": "Kitchen appliances",
+            "category": "Shopping"
+        },
+        {
+            "description": "Office supplies stationery",
+            "category": "Shopping"
+        },
+        {
+            "description": "Perfume and fragrance",
+            "category": "Shopping"
+        },
+        {
+            "description": "Electricity bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Water bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Internet bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Mobile phone bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Gas bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Cable TV subscription",
+            "category": "Utilities"
+        },
+        {
+            "description": "Home internet service",
+            "category": "Utilities"
+        },
+        {
+            "description": "Electricity power bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Natural gas utility",
+            "category": "Utilities"
+        },
+        {
+            "description": "Heating oil delivery",
+            "category": "Utilities"
+        },
+        {
+            "description": "Trash collection fee",
+            "category": "Utilities"
+        },
+        {
+            "description": "Sewage utility bill",
+            "category": "Utilities"
+        },
+        {
+            "description": "Landline phone service",
+            "category": "Utilities"
+        },
+        {
+            "description": "Broadband internet",
+            "category": "Utilities"
+        },
+        {
+            "description": "Cell phone service",
+            "category": "Utilities"
+        },
+        {
+            "description": "Home security system",
+            "category": "Utilities"
+        },
+        {
+            "description": "Water and sewage",
+            "category": "Utilities"
+        },
+        {
+            "description": "Utility connection fee",
+            "category": "Utilities"
+        },
+        {
+            "description": "Doctor consultation",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Pharmacy medicine",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Dental treatment",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Gym membership",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Hospital visit",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Health insurance premium",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Medical prescription drugs",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Eye exam optometrist",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Physical therapy session",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Vitamins and supplements",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Dental cleaning checkup",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Fitness center membership",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Yoga class subscription",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Chiropractor appointment",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Mental health counseling",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Lab tests and bloodwork",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Emergency room visit",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Surgical procedure",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Medical equipment purchase",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Massage therapy treatment",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Personal trainer session",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Acupuncture treatment",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Allergy medication",
+            "category": "Healthcare"
+        },
+        {
+            "description": "First aid supplies",
+            "category": "Healthcare"
+        },
+        {
+            "description": "Online course Udemy",
+            "category": "Education"
+        },
+        {
+            "description": "Textbook purchase",
+            "category": "Education"
+        },
+        {
+            "description": "Tutorial classes",
+            "category": "Education"
+        },
+        {
+            "description": "Study materials",
+            "category": "Education"
+        },
+        {
+            "description": "Exam fees",
+            "category": "Education"
+        },
+        {
+            "description": "University tuition payment",
+            "category": "Education"
+        },
+        {
+            "description": "Online learning platform",
+            "category": "Education"
+        },
+        {
+            "description": "Coursera course enrollment",
+            "category": "Education"
+        },
+        {
+            "description": "School supplies shopping",
+            "category": "Education"
+        },
+        {
+            "description": "Private tutoring session",
+            "category": "Education"
+        },
+        {
+            "description": "Educational software license",
+            "category": "Education"
+        },
+        {
+            "description": "Language learning app",
+            "category": "Education"
+        },
+        {
+            "description": "Professional certification",
+            "category": "Education"
+        },
+        {
+            "description": "Workshop registration fee",
+            "category": "Education"
+        },
+        {
+            "description": "Seminar attendance",
+            "category": "Education"
+        },
+        {
+            "description": "Library membership",
+            "category": "Education"
+        },
+        {
+            "description": "Research materials",
+            "category": "Education"
+        },
+        {
+            "description": "Academic conference fee",
+            "category": "Education"
+        },
+        {
+            "description": "Training program enrollment",
+            "category": "Education"
+        },
+        {
+            "description": "Student loan payment",
+            "category": "Education"
+        },
+        {
+            "description": "Educational books",
+            "category": "Education"
+        },
+        {
+            "description": "Notebook and stationery",
+            "category": "Education"
+        },
+        {
+            "description": "Skill development course",
+            "category": "Education"
+        },
+        {
+            "description": "Gift for friend",
+            "category": "Other"
+        },
+        {
+            "description": "Donation charity",
+            "category": "Other"
+        },
+        {
+            "description": "Personal miscellaneous",
+            "category": "Other"
+        },
+        {
+            "description": "Bank service charges",
+            "category": "Other"
+        },
+        {
+            "description": "ATM withdrawal fee",
+            "category": "Other"
+        },
+        {
+            "description": "Legal consultation fee",
+            "category": "Other"
+        },
+        {
+            "description": "Accounting services",
+            "category": "Other"
+        },
+        {
+            "description": "Insurance policy premium",
+            "category": "Other"
+        },
+        {
+            "description": "Pet grooming service",
+            "category": "Other"
+        },
+        {
+            "description": "Veterinary care",
+            "category": "Other"
+        },
+        {
+            "description": "Haircut and salon",
+            "category": "Other"
+        },
+        {
+            "description": "Dry cleaning laundry",
+            "category": "Other"
+        },
+        {
+            "description": "Postage and shipping",
+            "category": "Other"
+        },
+        {
+            "description": "Photography services",
+            "category": "Other"
+        },
+        {
+            "description": "Wedding gift",
+            "category": "Other"
+        },
+        {
+            "description": "Birthday present",
+            "category": "Other"
+        },
+        {
+            "description": "Holiday decorations",
+            "category": "Other"
+        },
+        {
+            "description": "Charitable contribution",
+            "category": "Other"
+        },
+        {
+            "description": "Membership dues",
+            "category": "Other"
+        },
+        {
+            "description": "Professional association fee",
+            "category": "Other"
+        },
+        {
+            "description": "Subscription box service",
+            "category": "Other"
+        },
+        {
+            "description": "Pet food and treats",
+            "category": "Other"
+        },
+        {
+            "description": "Baby supplies diapers",
+            "category": "Other"
+        },
+        {
+            "description": "Moving expenses",
+            "category": "Other"
+        },
+        {
+            "description": "Storage unit rental",
+            "category": "Other"
+        }
+    ]
+}
